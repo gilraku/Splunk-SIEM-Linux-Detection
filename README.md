@@ -28,7 +28,7 @@ index="linux_host" "Failed password" sshd
 | sort - count
 ```
 ![spl-ssh](Screenshots/ssh-bruteforce-1.png)
-![spl-ssh](Screenshots/ssh-bruteforce-1.png)
+![spl-ssh](Screenshots/ssh-bruteforce-2.png)
 
 **2. Mendeteksi Pembuatan User Baru (Audit Kepatuhan)**
 ```splunk
