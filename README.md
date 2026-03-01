@@ -43,6 +43,16 @@ index="linux_host" sudo "COMMAND=" ("curl" OR "chmod" OR "update.sh")
 
 ## 📊 Visualisasi & Dashboard SOC
 
+Berikut adalah tampilan dashboard utama yang memantau aktivitas mencurigakan secara real-time:
+
+![SOC Dashboard](Screenshots/dashboard.png)
+
+*Gambar 1: Dashboard Linux Security Monitoring yang menunjukkan grafik SSH Brute Force dan tabel deteksi perintah Sudo.*
+
+![Alert Configuration](Screenshots/alert.png)
+
+*Gambar 2: Konfigurasi Alert otomatis untuk mendeteksi percobaan login gagal yang melebihi ambang batas.*
+
 ## 📄 Laporan Investigasi (Triage)
 Hasil analisis log diubah menjadi laporan insiden yang berfokus pada mitigasi teknis dan penegakan kebijakan kontrol akses. Laporan lengkap dapat dilihat di sini:
 Laporan Triage INC-2026-001
