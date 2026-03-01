@@ -27,12 +27,15 @@ index="linux_host" "Failed password" sshd
 | stats count by user, src_ip
 | sort - count
 ```
+![spl-ssh](Screenshots/ssh-bruteforce-1.png)
+![spl-ssh](Screenshots/ssh-bruteforce-1.png)
 
 **2. Mendeteksi Pembuatan User Baru (Audit Kepatuhan)**
 ```splunk
 index="linux_host" ("useradd" OR "usermod" OR "new group" OR "new user") "sysupdate"
 | table _time, _raw
 ```
+![spl-useradd](Screenshots/useradd.png)
 
 **3. Mendeteksi Eksekusi Sudo yang Mencurigakan**
 ```splunk
@@ -40,6 +43,7 @@ index="linux_host" sudo "COMMAND=" ("curl" OR "chmod" OR "update.sh")
 | rex field=_raw "USER=(?<run_as_user>\S+).*COMMAND=(?<sudo_command>.*)"
 | table _time, user, run_as_user, sudo_command
 ```
+![spl-sudo](Screenshots/sudo.png)
 
 ## 📊 Visualisasi & Dashboard SOC
 
