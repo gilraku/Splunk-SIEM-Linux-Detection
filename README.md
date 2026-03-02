@@ -1,7 +1,7 @@
 # SIEM Home Lab: Linux Threat Detection & Monitoring with Splunk
 
 ## 📌 Deskripsi Proyek
-Proyek ini adalah simulasi lingkungan *Security Information and Event Management* (SIEM) yang dibangun untuk memantau keamanan *host* Linux (Ubuntu). Matlamat utama dari lab ini adalah melakukan *ingestion* data log autentikasi, menyimulasikan serangan siber secara langsung, dan membangun kapabilitas deteksi (*Threat Hunting*) serta peringatan otomatis.
+Proyek ini adalah simulasi lingkungan *Security Information and Event Management* (SIEM) yang dibangun untuk memantau keamanan *host* Linux (Ubuntu). Tujuan utama dari lab ini adalah melakukan *ingestion* data log autentikasi, menyimulasikan serangan siber secara langsung, dan membangun kapabilitas deteksi (*Threat Hunting*) serta peringatan otomatis.
 
 Selain dari perspektif operasional *Blue Team*, proyek ini juga didokumentasikan untuk memenuhi standar audit dan tata kelola keamanan (GRC), dengan fokus pada evaluasi kepatuhan kontrol akses pengguna.
 
